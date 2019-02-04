@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+ }
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #FF1493;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #000000;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+
+	body{
+  background: url("fon.jpg");size: cover;
+}
+
+h1 {
+	color:#000000;
+
+  font-family: Verdana;
+  font-size: 400%;
+}
+h2 {
+
+	color:#000000;
+  font-family:Snell Roundhand Cursive ;
+  Font-style:italic;
+    font-size:400%;
+  margin-left: 30%; 
+margin-top: 5%;
+  
+}
+
+p { font-family: 'Times New Roman', Times, serif; 
+    font-style: italic;
+	text-decoration: underline;
+	font-weight:bold;
+	font-size:120%;
+margin-left: 15%; }
+ 
+
+ 
+ ul {margin-left: 25%;
+    list-style: square outside; 
+	font-style: 'Times New Roman', Times, serif;
+	font-weight:bold;
+	font-size:120%;
+   }
+   table { 
+border-collapse: collapse; 
+border: 1px solid grey; 
+background:ivory;
+}td {border: 1px solid grey;
+
+}
+th {border: 1px solid grey;
+text-decoration: underline;
+font-style: italic;
+font-size: 150%;
+}
+tr {  font-family: 'Times New Roman', Times, serif; 
+    font-style: none;
+	text-decoration: none;
+	font-weight:bold;
+font-size:100%;}
+}
+
+
+
+
